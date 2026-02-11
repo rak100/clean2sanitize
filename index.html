@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oklahoma City Commercial Cleaning | Clean 2 Sanitize CCS</title>
+  <meta name="description" content="Clean 2 Sanitize CCS provides Oklahoma City commercial cleaning, office cleaning, janitorial services, carpet cleaning, and window cleaning. Call now or request a fast quote." />
+  <style>
+    :root {
+      --bg: #f5fafb;
+      --surface: #ffffff;
+      --text: #0f2c36;
+      --muted: #4c6470;
+      --primary: #0b7ea1;
+      --primary-dark: #086784;
+      --accent: #13a389;
+      --border: #d8e5ea;
+      --shadow: 0 10px 30px rgba(10, 48, 64, 0.08);
+      --radius: 14px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f8fcfd 0%, #eef7fa 40%, #f8fcfd 100%);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(100% - 2rem, var(--max)); margin-inline: auto; }
+
+    .btn {
+      display: inline-block;
+      padding: 0.88rem 1.15rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      border: 2px solid transparent;
+      transition: 0.2s ease;
+      text-align: center;
+      min-height: 48px;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-secondary {
+      background: #fff;
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+    .btn-secondary:hover { background: #ecf7fb; }
+
+    .section { padding: 4rem 0; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(6px);
+    }
+    .header-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem 0;
+    }
+    .logo {
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      color: #0c3e50;
+      white-space: nowrap;
+    }
+    .logo span { color: var(--primary); }
+    nav {
+      display: flex;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .header-phone {
+      font-weight: 800;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .hero { padding: 4rem 0 2.5rem; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .eyebrow {
+      display: inline-block;
+      background: #e9f7fb;
+      color: #0f6782;
+      border: 1px solid #cdeaf3;
+      padding: 0.35rem 0.6rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      margin: 0 0 0.9rem;
+      line-height: 1.15;
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      letter-spacing: -0.02em;
+    }
+    .hero p { margin: 0.6rem 0; color: var(--muted); }
+    .hero-cta { margin-top: 1.2rem; display: flex; gap: 0.7rem; flex-wrap: wrap; }
+
+    .badges {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .badge {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.38rem 0.72rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #0d586f;
+    }
+    .trust-callouts {
+      margin-top: 0.95rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      color: #0f5f76;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .form-wrap { padding: 1rem; }
+    form { display: grid; gap: 0.72rem; }
+    .field { display: grid; gap: 0.28rem; }
+    label { font-size: 0.9rem; font-weight: 700; color: #164454; }
+    input, select, textarea {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid #bcd4dd;
+      border-radius: 10px;
+      padding: 0.65rem 0.75rem;
+      font: inherit;
+      color: var(--text);
+      background: #fff;
+    }
+    textarea { min-height: 90px; resize: vertical; }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--primary);
+      outline: 3px solid rgba(11,126,161,0.15);
+    }
+    .microcopy {
+      margin: 0;
+      font-size: 0.84rem;
+      color: #245364;
+    }
+
+    .proof-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+    .proof-tile {
+      text-align: center;
+      padding: 1rem 0.8rem;
+    }
+    .proof-tile strong {
+      display: block;
+      font-size: 1.3rem;
+      color: var(--primary);
+    }
+    .proof-tile span { color: var(--muted); font-size: 0.9rem; }
+
+    h2 {
+      margin: 0 0 0.8rem;
+      font-size: clamp(1.45rem, 2.8vw, 2rem);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    h3 { margin: 0 0 0.5rem; font-size: 1.15rem; }
+    .sub { color: var(--muted); margin: 0 0 1.2rem; }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.85rem;
+    }
+    .service-card { padding: 1rem; }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .detail-card { padding: 1.1rem; }
+    .mini-cta { margin-top: 1rem; }
+
+    ul { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+    li { margin: 0.25rem 0; }
+
+    .process-grid, .plans-grid, .reviews-grid {
+      display: grid;
+      gap: 0.9rem;
+    }
+    .process-grid { grid-template-columns: repeat(4, 1fr); }
+    .plans-grid { grid-template-columns: repeat(3, 1fr); }
+    .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+
+    .box { padding: 1rem; }
+    .price {
+      color: var(--primary);
+      font-weight: 800;
+      margin: 0.2rem 0 0.7rem;
+    }
+
+    .addons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.7rem;
+    }
+    .addon {
+      background: #eaf8f5;
+      border: 1px solid #bee8df;
+      border-radius: 10px;
+      padding: 0.8rem;
+      text-align: center;
+      font-weight: 700;
+      color: #0f6555;
+    }
+
+    .areas-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 0.8rem;
+    }
+    .areas-list span {
+      background: #eef8fc;
+      border: 1px solid #cde5ef;
+      border-radius: 999px;
+      padding: 0.4rem 0.7rem;
+      color: #245364;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .faq details {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 0.95rem;
+      margin-bottom: 0.6rem;
+    }
+    .faq summary { cursor: pointer; font-weight: 700; }
+
+    .cta-band {
+      margin-top: 1.3rem;
+      padding: 1rem;
+      border: 1px solid #bfe0ea;
+      background: linear-gradient(90deg, #eaf8fd, #e7f8f4);
+      border-radius: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.7rem;
+    }
+    .cta-band p { margin: 0; font-weight: 700; color: #11485a; }
+
+    footer {
+      padding: 2.2rem 0 6rem;
+      background: #09384a;
+      color: #d8edf4;
+      margin-top: 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1.2fr 1fr;
+    }
+    .footer-muted { color: #b7d7e2; }
+    .footer-links a { color: #d8edf4; margin-right: 0.8rem; }
+
+    .mobile-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255,255,255,0.98);
+      border-top: 1px solid var(--border);
+      display: none;
+      gap: 0.5rem;
+      padding: 0.6rem;
+      z-index: 1100;
+    }
+    .mobile-bar a { flex: 1; }
+
+    @media (max-width: 980px) {
+      .hero-grid, .detail-grid, .footer-grid { grid-template-columns: 1fr; }
+      .grid-4 { grid-template-columns: repeat(2, 1fr); }
+      .process-grid { grid-template-columns: repeat(2, 1fr); }
+      .plans-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .addons { grid-template-columns: repeat(2, 1fr); }
+      nav { display: none; }
+      .hero { padding-top: 2.8rem; }
+    }
+
+    @media (max-width: 680px) {
+      .proof-strip { grid-template-columns: repeat(2, 1fr); }
+      .grid-4 { grid-template-columns: 1fr; }
+      .addons { grid-template-columns: 1fr; }
+      .mobile-bar { display: flex; }
+      .header-phone { display: none; }
+      body { padding-bottom: 72px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-wrap">
+      <a class="logo" href="#top">Clean 2 Sanitize <span>CCS</span></a>
+      <nav aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#plans">Plans</a>
+        <a href="#areas">Service Areas</a>
+        <a href="#faq">FAQ</a>
+        <a href="#quote-form">Get Quote</a>
+      </nav>
+      <a class="header-phone" href="tel:+14055550123">(405) 555-0123</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Oklahoma City Commercial Cleaning Experts</span>
+          <h1>Oklahoma City Commercial Cleaning for Offices, Retail, and Medical Spaces</h1>
+          <p>Clean 2 Sanitize CCS helps Oklahoma City office managers and property managers keep facilities spotless, healthy, and ready for business with reliable recurring cleaning.</p>
+          <p>Primary services include office cleaning, janitorial routines, carpet cleaning, and window cleaning with flexible scheduling across Oklahoma City and nearby cities.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="tel:+14055550123">Call Now</a>
+            <a class="btn btn-secondary" href="#quote-form">Get Quote</a>
+          </div>
+          <div class="badges" aria-label="Trust badges">
+            <span class="badge">Licensed</span>
+            <span class="badge">Bonded</span>
+            <span class="badge">Insured</span>
+          </div>
+          <div class="trust-callouts">
+            <span>Background-Checked Staff</span>
+            <span>Satisfaction Guarantee</span>
+          </div>
+        </div>
+
+        <aside class="card form-wrap" aria-label="Quote form panel">
+          <h2 style="margin-top:0;">Get a Fast Quote</h2>
+          <p class="sub">Tell us what you need in Oklahoma City. We will follow up quickly.</p>
+          <form id="quote-form" class="quote-form" novalidate>
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone (required)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="service">Service Type</label>
+              <select id="service" name="service">
+                <option>Office Cleaning</option>
+                <option>Janitorial Service</option>
+                <option>Carpet Cleaning</option>
+                <option>Window Cleaning</option>
+                <option>Post-Construction Cleaning</option>
+                <option>Airbnb Turnover Cleaning</option>
+                <option>Move-In/Move-Out Cleaning</option>
+                <option>Deep Cleaning</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="zip">Zip Code</label>
+              <input id="zip" name="zip" type="text" inputmode="numeric" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us your building size, frequency, and preferred schedule."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Request Free Quote</button>
+            <p class="microcopy">We respond within 15 minutes during business hours.</p>
+            <p class="microcopy">No spam. Your info stays private.</p>
+          </form>
+        </aside>
+      </div>
+
+      <div class="container proof-strip" aria-label="Quick proof">
+        <div class="card proof-tile"><strong>5+ Years</strong><span>Serving Oklahoma City</span></div>
+        <div class="card proof-tile"><strong>100+ Cleanings</strong><span>Completed each month</span></div>
+        <div class="card proof-tile"><strong>4.9★ Rating</strong><span>From local clients</span></div>
+        <div class="card proof-tile"><strong>Same-Day</strong><span>Availability for urgent jobs</span></div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Commercial Cleaning Services in Oklahoma City</h2>
+        <p class="sub">Use the links below to jump to service details or request a quote now.</p>
+        <div class="grid-4">
+          <a class="card service-card" href="#office-cleaning">
+            <h3>Office Cleaning</h3>
+            <p>Desks, floors, touchpoints, and restrooms on a reliable schedule.</p>
+          </a>
+          <a class="card service-card" href="#janitorial">
+            <h3>Janitorial Service</h3>
+            <p>Routine facility cleaning with checklist-based quality control.</p>
+          </a>
+          <a class="card service-card" href="#carpet-cleaning">
+            <h3>Carpet Cleaning</h3>
+            <p>Spot treatment and deep extraction for high-traffic areas.</p>
+          </a>
+          <a class="card service-card" href="#window-cleaning">
+            <h3>Window Cleaning</h3>
+            <p>Interior and accessible exterior glass for a cleaner first impression.</p>
+          </a>
+        </div>
+        <div class="cta-band">
+          <p>Need a custom scope for your building in Oklahoma City?</p>
+          <div>
+            <a class="btn btn-primary" href="tel:+14055550123">Call Now</a>
+            <a class="btn btn-secondary" href="#quote-form">Get a Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-grid">
+        <article id="office-cleaning" class="card detail-card">
+          <h3>Office Cleaning</h3>
+          <p><strong>What’s included:</strong></p>
+          <ul>
+            <li>Trash removal, dusting, vacuuming, and hard floor care</li>
+            <li>Restroom wipe-down and restocking support</li>
+            <li>High-touch disinfection for shared areas</li>
+          </ul>
+          <p><strong>Ideal for:</strong> Office suites, co-working spaces, clinics, and retail storefronts.</p>
+          <p class="mini-cta"><a class="btn btn-primary" href="tel:+14055550123">Call for a quote</a></p>
+        </article>
+
+        <article id="janitorial" class="card detail-card">
+          <h3>Janitorial Service</h3>
+          <p><strong>What’s included:</strong></p>
+          <ul>
+            <li>Daily, weekly, or bi-weekly facility cleaning plans</li>
+            <li>Common area maintenance and restroom sanitation</li>
+            <li>Checklist tracking with supervisor spot checks</li>
+          </ul>
+          <p><strong>Ideal for:</strong> Multi-tenant properties, schools, healthcare offices, and warehouses.</p>
+          <p class="mini-cta"><a class="btn btn-primary" href="tel:+14055550123">Call for a quote</a></p>
+        </article>
+
+        <article id="carpet-cleaning" class="card detail-card">
+          <h3>Carpet Cleaning</h3>
+          <p><strong>What’s included:</strong></p>
+          <ul>
+            <li>Pre-inspection and stain/spot treatment</li>
+            <li>Hot water extraction for deeper soil removal</li>
+            <li>Deodorizing and drying guidance</li>
+          </ul>
+          <p><strong>Ideal for:</strong> Corporate offices, medical waiting rooms, and retail corridors.</p>
+          <p class="mini-cta"><a class="btn btn-primary" href="tel:+14055550123">Call for a quote</a></p>
+        </article>
+
+        <article id="window-cleaning" class="card detail-card">
+          <h3>Window Cleaning</h3>
+          <p><strong>What’s included:</strong></p>
+          <ul>
+            <li>Interior glass cleaning and detail wipe-down</li>
+            <li>Reachable exterior panes and entry doors</li>
+            <li>Track and sill cleaning where accessible</li>
+          </ul>
+          <p><strong>Ideal for:</strong> Storefronts, offices, medical buildings, and property-managed sites.</p>
+          <p class="mini-cta"><a class="btn btn-primary" href="tel:+14055550123">Call for a quote</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <h2>Our Process</h2>
+        <p class="sub">Simple, checklist-driven, and built for consistent quality in Oklahoma City facilities.</p>
+        <div class="process-grid">
+          <div class="card box"><h3>1) Walkthrough</h3><p>We review your space, priorities, and schedule needs.</p></div>
+          <div class="card box"><h3>2) Scope & Quote</h3><p>You receive a clear quote with line-item service details.</p></div>
+          <div class="card box"><h3>3) Service Launch</h3><p>Background-checked crew follows your custom cleaning checklist.</p></div>
+          <div class="card box"><h3>4) Quality Control</h3><p>Supervisor check-ins and feedback loops keep standards high.</p></div>
+        </div>
+        <div class="cta-band">
+          <p>Ready to start recurring commercial cleaning?</p>
+          <div>
+            <a class="btn btn-primary" href="tel:+14055550123">Call Now</a>
+            <a class="btn btn-secondary" href="#quote-form">Get a Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="section">
+      <div class="container">
+        <h2>Recurring Cleaning Programs</h2>
+        <p class="sub">Choose the service level that fits your facility operations and traffic level.</p>
+        <div class="plans-grid">
+          <article class="card box">
+            <h3>Starter</h3>
+            <p class="price">Starting at $X</p>
+            <p>Weekly / Bi-Weekly cleaning for smaller offices.</p>
+            <ul>
+              <li>Core office cleaning checklist</li>
+              <li>Restroom wipe-down + trash service</li>
+              <li>Touchpoint disinfection</li>
+            </ul>
+          </article>
+          <article class="card box">
+            <h3>Standard</h3>
+            <p class="price">Starting at $X</p>
+            <p>Most popular for growing teams and shared facilities.</p>
+            <ul>
+              <li>All Starter features</li>
+              <li>More frequent restroom and floor care</li>
+              <li>Monthly quality-control review</li>
+            </ul>
+          </article>
+          <article class="card box">
+            <h3>Premium</h3>
+            <p class="price">Starting at $X</p>
+            <p>High-frequency coverage for demanding environments.</p>
+            <ul>
+              <li>All Standard features</li>
+              <li>Priority scheduling + after-hours options</li>
+              <li>Enhanced reporting and inspections</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <h2>Add-On Services</h2>
+        <div class="addons">
+          <div class="addon">Disinfecting / Fogging</div>
+          <div class="addon">Floor Care</div>
+          <div class="addon">Restroom Deep Sanitation</div>
+          <div class="addon">Breakroom Cleaning</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas" class="section">
+      <div class="container">
+        <h2>Service Areas</h2>
+        <p class="sub">Clean 2 Sanitize CCS serves commercial clients throughout the metro.</p>
+        <div class="areas-list" aria-label="Cities served">
+          <span>Oklahoma City</span>
+          <span>Edmond</span>
+          <span>Moore</span>
+          <span>Norman</span>
+          <span>Yukon</span>
+          <span>Midwest City</span>
+          <span>and nearby areas</span>
+        </div>
+        <p style="margin-top:1rem;">
+          Looking for <a href="#office-cleaning"><strong>office cleaning</strong></a>,
+          <a href="#janitorial"><strong>janitorial</strong></a>,
+          <a href="#carpet-cleaning"><strong>carpet cleaning</strong></a>, or
+          <a href="#window-cleaning"><strong>window cleaning</strong></a> in Oklahoma City?
+          <a href="#quote-form"><strong>Request a quote now</strong></a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What Local Clients Say</h2>
+        <div class="reviews-grid">
+          <article class="card box">
+            <p>"Reliable crew, consistent checklist, and fast communication. Our office always looks ready for clients."</p>
+            <p><strong>- Jordan P., Office Manager</strong><br />Professional Services Firm</p>
+          </article>
+          <article class="card box">
+            <p>"They handled after-hours cleaning and our property manager finally stopped getting complaints."</p>
+            <p><strong>- Melissa R., Property Manager</strong><br />Multi-Tenant Commercial Building</p>
+          </article>
+          <article class="card box">
+            <p>"Great attention to detail in treatment rooms and waiting areas. Very dependable team."</p>
+            <p><strong>- Dr. A. Nguyen, Clinic Owner</strong><br />Medical Office</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>Are you insured for commercial cleaning work?</summary>
+          <p>Yes. Clean 2 Sanitize CCS is licensed, bonded, and insured for commercial cleaning in Oklahoma City.</p>
+        </details>
+        <details>
+          <summary>Do you bring your own cleaning supplies and equipment?</summary>
+          <p>Yes, we bring standard supplies and equipment. If your facility has specific product requirements, we can follow them.</p>
+        </details>
+        <details>
+          <summary>How is pricing calculated?</summary>
+          <p>Pricing depends on square footage, frequency, service scope, and building type. We provide clear quote options.</p>
+        </details>
+        <details>
+          <summary>Do you offer after-hours cleaning?</summary>
+          <p>Yes. We provide day and evening schedules, including after-hours options for offices and retail spaces.</p>
+        </details>
+        <details>
+          <summary>What if we are not satisfied with a cleaning visit?</summary>
+          <p>We back our work with a satisfaction guarantee and will address service concerns promptly.</p>
+        </details>
+        <details>
+          <summary>How does the quote process work?</summary>
+          <p>Call or submit the form, share your needs, and we provide a tailored estimate after a walkthrough or scope review.</p>
+        </details>
+        <details>
+          <summary>Are your staff background-checked?</summary>
+          <p>Yes. Team members are background-checked and trained on safety, facility protocols, and checklist standards.</p>
+        </details>
+        <details>
+          <summary>Can we cancel or change service frequency?</summary>
+          <p>Yes. We offer flexible scheduling and cancellation terms based on your service agreement.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card" style="padding:1.1rem;">
+        <h2>Get Your Oklahoma City Cleaning Quote Today</h2>
+        <p class="sub">Call now for immediate help, or send your details and our team will respond quickly during business hours.</p>
+        <div class="hero-cta" style="margin-bottom:1rem;">
+          <a class="btn btn-primary" href="tel:+14055550123">Call Now: (405) 555-0123</a>
+          <a class="btn btn-secondary" href="#quote-form-final">Get a Free Quote</a>
+        </div>
+        <form id="quote-form-final" class="quote-form" novalidate>
+          <div class="field">
+            <label for="name2">Full Name</label>
+            <input id="name2" name="name2" type="text" required />
+          </div>
+          <div class="field">
+            <label for="phone2">Phone (required)</label>
+            <input id="phone2" name="phone2" type="tel" required />
+          </div>
+          <div class="field">
+            <label for="email2">Email</label>
+            <input id="email2" name="email2" type="email" />
+          </div>
+          <div class="field">
+            <label for="service2">Service Type</label>
+            <select id="service2" name="service2">
+              <option>Office Cleaning</option>
+              <option>Janitorial Service</option>
+              <option>Carpet Cleaning</option>
+              <option>Window Cleaning</option>
+              <option>Post-Construction Cleaning</option>
+              <option>Airbnb Turnover Cleaning</option>
+              <option>Move-In/Move-Out Cleaning</option>
+              <option>Deep Cleaning</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="zip2">Zip Code</label>
+            <input id="zip2" name="zip2" type="text" />
+          </div>
+          <div class="field">
+            <label for="message2">Message</label>
+            <textarea id="message2" name="message2"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Request Free Quote</button>
+          <p class="microcopy">We respond within 15 minutes during business hours.</p>
+          <p class="microcopy">No spam. Your info stays private.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3 style="margin-top:0;">Clean 2 Sanitize CCS</h3>
+        <p class="footer-muted">
+          123 Main St, Oklahoma City, OK 73102<br />
+          Phone: <a href="tel:+14055550123">(405) 555-0123</a><br />
+          Email: info@clean2sanitizeccs.com<br />
+          Hours: Mon-Sat 8am-6pm<br />
+          Service Area: Oklahoma City, Edmond, Moore, Norman, Yukon, Midwest City, and nearby areas
+        </p>
+      </div>
+      <div>
+        <h3 style="margin-top:0;">Quick Links</h3>
+        <p class="footer-links">
+          <a href="#office-cleaning">Office Cleaning</a>
+          <a href="#janitorial">Janitorial</a>
+          <a href="#carpet-cleaning">Carpet</a>
+          <a href="#window-cleaning">Window</a>
+          <a href="#quote-form">Quote Form</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar" aria-label="Mobile quick actions">
+    <a class="btn btn-primary" href="tel:+14055550123">Call Now</a>
+    <a class="btn btn-secondary" href="#quote-form">Get Quote</a>
+  </div>
+
+  <script>
+    (function () {
+      var quoteLinks = document.querySelectorAll('a[href^="#quote-form"]');
+      quoteLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          var target = document.querySelector(link.getAttribute("href"));
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+
+      var forms = document.querySelectorAll(".quote-form");
+      forms.forEach(function (form) {
+        form.addEventListener("submit", function (e) {
+          var nameInput = form.querySelector('input[type="text"][required], input[name="name"], input[name="name2"]');
+          var phoneInput = form.querySelector('input[type="tel"][required]');
+          var name = nameInput ? nameInput.value.trim() : "";
+          var phone = phoneInput ? phoneInput.value.trim() : "";
+          if (!name || !phone) {
+            e.preventDefault();
+            alert("Please enter your full name and phone number.");
+            return;
+          }
+          e.preventDefault();
+          alert("Thanks. Your quote request has been captured.");
+          form.reset();
+        });
+      });
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CleaningService",
+    "name": "Clean 2 Sanitize CCS",
+    "url": "https://www.clean2sanitizeccs.com",
+    "telephone": "+1-405-555-0123",
+    "email": "info@clean2sanitizeccs.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Main St",
+      "addressLocality": "Oklahoma City",
+      "addressRegion": "OK",
+      "postalCode": "73102",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "35.4676",
+      "longitude": "-97.5164"
+    },
+    "areaServed": [
+      "Oklahoma City, OK",
+      "Edmond, OK",
+      "Moore, OK",
+      "Norman, OK",
+      "Yukon, OK",
+      "Midwest City, OK"
+    ],
+    "openingHours": "Mo-Sa 08:00-18:00"
+  }
+  </script>
+</body>
+</html>
